@@ -4,9 +4,9 @@ import Preview from './components/preview';
 import React, {useState} from 'react';
 
 function App() {
-  const markdownText = `# Welcome to my React Markdown Previewer!
+  const markdownText = `# Hello! Welcome to my page!
 
-  ## This is a sub-heading...
+  ## ...
   ### And here's some other cool stuff:
   
   Heres some code, \`<div></div>\`, between 2 backticks.
@@ -14,11 +14,22 @@ function App() {
   \`\`\`
   // this is multi-line code:
   
-  function anotherExample(firstLine, lastLine) {
-    if (firstLine == '\`\`\`' && lastLine == '\`\`\`') {
-      return multiLineCode;
+  function fibonacci(endHere) {
+    let numberOne = 0;
+    let numberTwo = 1;
+    let next;
+    // Two first numbers
+    console.log(0);
+    console.log(1);
+    next = numberOne + numberTwo;
+
+    while(next <= endHere) {
+      console.log(next) 
+      numberOne = numberTwo;
+      numberTwo = next;
+      next = numberOne + numberTwo;
     }
-  }
+  
   \`\`\`
   
   You can also make text **bold**... whoa!
@@ -26,7 +37,7 @@ function App() {
   Or... wait for it... **_both!_**
   And feel free to go crazy ~~crossing stuff out~~.
   
-  There's also [links](https://www.freecodecamp.com), and
+  Here is the link [links](https://github.com/tonikv), and
   > Block Quotes!
   
   And if you want to get really crazy, even tables:
@@ -46,7 +57,7 @@ function App() {
   1. Use just 1s if you want!
   1. And last but not least, let's not forget embedded images:
   
-  ![React Logo w/ Text](https://goo.gl/Umyytc)
+  ![Logo](https://logos.keycdn.com/keycdn-icon-black.png)
   `
 
  
